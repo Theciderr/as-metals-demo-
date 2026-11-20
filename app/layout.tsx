@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, Manrope } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { businessSchema, pageMetadata, siteUrl } from "./site";
 import "./globals.css";
 const displayFont = Bricolage_Grotesque({
@@ -31,6 +32,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           }}
         />
         {children}
+        <Analytics />
       </body>
     </html>
   );
