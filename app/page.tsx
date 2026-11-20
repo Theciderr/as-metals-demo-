@@ -10,24 +10,20 @@ export default function Home() {
       <a className="skip" href="#main">
         Skip to content
       </a>
-      {Date.now() < Date.parse("2026-11-24T00:00:00+05:30") && (
-        <div className="notice" role="region" aria-label="Opening announcement">
-          Grand opening · 24 November 2026
-        </div>
-      )}
       <Header />
       <main id="main" className="wrap">
         <section className="hero">
-          <div>
+          <div className="hero-copy">
             <p className="eyebrow">LAKHNAUR SAHIB · AMBALA</p>
+            <p className="opening-badge">Grand opening · 24 November 2026</p>
             <h1>
               A distinctive detail.
               <br />
               Made for your space.
             </h1>
             <p>
-              Designer jali, CNC-carved doors and sculpted wall panels, made to
-              your specifications.
+              Designer jali, CNC-carved doors and sculpted wall panels for your
+              space.
             </p>
             <div className="row">
               <a className="button primary" href="/quote">
@@ -40,7 +36,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <figure>
+          <figure className="hero-visual">
             <Image
               src="/research/catalogue/images/AMF-3DR-01-2.jpg"
               width={1507}
@@ -51,7 +47,7 @@ export default function Home() {
               fetchPriority="high"
             />
             <figcaption>
-              Solstice · AMF-3DR-01 · Catalogue illustration
+              Solstice · AMF-3DR-01 · Design concept
             </figcaption>
           </figure>
         </section>
@@ -74,7 +70,7 @@ export default function Home() {
                 <Image
                   src="/research/catalogue/images/AMF-GEO-01-2.jpg"
                   loading="lazy"
-                  alt="Jali & partitions catalogue illustration"
+                  alt="Jali and partitions design concept"
                   width={1413}
                   height={1525}
                   sizes="(min-width: 1000px) 25vw, 50vw"
@@ -91,7 +87,7 @@ export default function Home() {
                 <Image
                   src="/research/catalogue/images/AMF-3DR-01-2.jpg"
                   loading="lazy"
-                  alt="Carved doors catalogue illustration"
+                  alt="Carved doors design concept"
                   width={1507}
                   height={1627}
                   sizes="(min-width: 1000px) 25vw, 50vw"
@@ -108,7 +104,7 @@ export default function Home() {
                 <Image
                   src="/research/catalogue/images/AMF-3DR-17-2.jpg"
                   loading="lazy"
-                  alt="Relief wall panels catalogue illustration"
+                  alt="Relief wall panels design concept"
                   width={1507}
                   height={1627}
                   sizes="(min-width: 1000px) 25vw, 50vw"
@@ -125,7 +121,7 @@ export default function Home() {
                 <Image
                   src="/research/catalogue/images/AMF-3DR-30-2.jpg"
                   loading="lazy"
-                  alt="Sculpted wall art catalogue illustration"
+                  alt="Sculpted wall art design concept"
                   width={1507}
                   height={1627}
                   sizes="(min-width: 1000px) 25vw, 50vw"
@@ -137,7 +133,7 @@ export default function Home() {
               </a>
             </div>
             <p className="muted">
-              Catalogue illustrations. Material, finish and suitability
+              Design concepts. Material, finish and suitability
               confirmed per project.
             </p>
             <a className="button primary" href="/quote">

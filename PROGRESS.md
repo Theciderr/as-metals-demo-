@@ -2,6 +2,58 @@
 
 Updated 21 November 2026 (Asia/Calcutta). Read with AGENTS.md and DESIGN.md at every new session.
 
+## Redesign checkpoint 3e - Contact and final polish
+- Branch: `redesign`
+- Contact/About page upgraded with a premium contact card, two-column business information, clear visit details and verified phone/WhatsApp/Instagram links.
+- Shared footer now has a deeper gold-framed dark surface, larger text, stronger collection links and the supplied gold logo on transparent backing.
+- Header, focus, mobile bottom contact bar, Home, Gallery and Quote layouts preserve the one-theme dark/gold system.
+- Verified `npm run typecheck`, `npm run build --webpack`, route axe checks, filter motion, quote logic and 375px/1280px/1440px geometry.
+- Lighthouse 12.6.1 mobile results: Home 71, Gallery 74, Quote 89, Contact 84 performance. Accessibility, best practices and SEO are 100 on all four routes.
+- Performance target 90+ is not yet met. Remaining work is trace-led JavaScript/image/LCP optimization, not visual redesign.
+- No invented hours, map pin, reviews, client history or business claims were added.
+
+## Redesign checkpoint 3d
+- Branch: `redesign`
+- Quote page composition upgraded only. Added a premium heading, framed selected-design panel, clearer form surface, stronger required/optional labels and a sticky desktop guidance panel.
+- Inline validation, first-invalid focus, local file handling, direct WhatsApp alternative and prepared-message fallback behavior are unchanged.
+- Selected catalogue references now use "Selected design · concept" and design-concept alt text.
+- Verified `npm run typecheck` and `npm run build --webpack`.
+- Browser/axe route checks pass at 375px and 1280px. Manual 375px/1440px geometry checks show no overflow.
+- Standalone quote logic passes validation, selected-design, optional-field, attachment-reminder and Unicode/URL round-trip checks.
+- Invalid submission exposes name and phone errors correctly. Valid submission shows the prepared WhatsApp message success state.
+- Contact/About redesign remains pending.
+
+## Redesign checkpoint 3c
+- Branch: `redesign`
+- Gallery page composition upgraded only. Heading, offering tabs, search/filter controls and catalogue grid now use the shared dark/gold system.
+- Design cards use a three-column desktop rhythm with staggered offsets and stronger image hover/press feedback. Mobile remains a readable single-column catalogue.
+- Catalogue labels now say "Design concepts" in the Gallery heading summary and detail dialog.
+- Existing 54-design filtering, search, family filter, pagination, native dialog, quote handoff and custom comparison behavior were preserved.
+- Verified `npm run typecheck` and `npm run build --webpack`.
+- Browser/axe route checks pass at 375px and 1280px. Manual 1440px geometry check has three columns, 12 cards and no horizontal overflow.
+- Gallery filter/reduced-motion/count script passes. Quote and Contact redesign work remain pending.
+
+## Redesign checkpoint 3b
+- Branch: `redesign`
+- Home page composition updated only. The hero now has a compact grand-opening badge, a 620ms staged entrance, stronger 54px mobile CTAs and an image-led right visual.
+- Collection section uses a responsive asymmetric desktop grid with the first and third tiles offset from the equal-card baseline.
+- Catalogue scenes are labelled as design concepts in Home captions and collection alt text.
+- Hero and collection imagery retain real catalogue assets; no invented project claims or unsupported facts were added.
+- The mobile CTA is visible in the initial viewport and the fixed WhatsApp/Call bar remains thumb-sized.
+- Verified `npm run typecheck` and `npm run build --webpack`.
+- Verified no horizontal overflow at 375px and 1440px; primary hero CTA is visible within the initial viewport at both sizes.
+- Browser/axe route checks passed. Lighthouse and Gallery, Quote and Contact redesign work remain pending.
+
+## Redesign checkpoint 3a
+- Branch: `redesign`
+- Global design system implemented only. Bricolage Grotesque display and Manrope body fonts load through `next/font`.
+- Charcoal/ink, warm gold, bronze and sand semantic tokens are consolidated in `app/globals.css`; the palette remains dark and catalogue-led.
+- Shared controls now use 6px radii, 52px mobile primary/control height, visible focus rings, gold press feedback and a 260ms eased transition system.
+- Warm radial surfaces, restrained fine grain and deeper tinted shadows add depth without a new theme or image assets.
+- Verified `npm run typecheck` and `npm run build --webpack`.
+- Browser checks passed at 375px, 1280px and 1440px with no horizontal overflow, missing alt text, axe violations or one-H1 regressions.
+- Lighthouse and page-specific redesign work remain pending. Do not mark Phase 4 complete.
+
 ## Current checkpoint
 Phase 4 INCOMPLETE. User authorised final pass, but two performance optimization attempts did not reach the required mobile >=90 scores. STOPPED under the brief's two-failure rule; await go before further fixes. Recommend gpt-6.2-astra/high for the performance fix. Do not call this Checkpoint 7/final handover complete or deploy-ready.
 

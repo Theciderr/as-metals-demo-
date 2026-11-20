@@ -1,5 +1,46 @@
 # Design memory
 
+## Redesign 3a - global system
+- Direction: warm charcoal showroom with catalogue imagery leading.
+- Display: Bricolage Grotesque through `next/font`.
+- Body: Manrope through `next/font`.
+- Palette: charcoal `#171816`, deep ink `#11120f`, raised surface `#20211d`, warm gold `#d6b978`, gold light `#ead7a4`, bronze `#b88b5a`, sand `#d3cab6`.
+- Shape: 6px controls and 3px catalogue-image framing. Do not mix with glass cards or large decorative radii.
+- Motion: 260ms eased interactions, 180ms press feedback, transform/opacity for visible movement and reduced-motion override preserved.
+- Surface: warm radial glows, subtle fixed grain, gold hairlines and tinted shadows. Keep one dark theme.
+- Current step: global tokens and controls complete. Page composition, Gallery, Quote and Contact remain for later checkpoints.
+
+## Redesign 3b - Home
+- Hero: compact opening badge, two-line confident headline, 20-word supporting copy target, one primary and one secondary CTA.
+- Entrance: headline/copy at 0ms, image at 120ms, CTAs at 220ms, 620ms total, ease-out-quart family.
+- Collections: asymmetric 1.35 / 0.85 / 1 / 1.15 desktop proportions with staggered tile offsets. Mobile uses a strict two-column grid.
+- Imagery: real catalogue assets only, captioned as design concepts, saturated rather than desaturated.
+- Home visual structure: hero, collection discovery, featured catalogue, custom work, materials and closing quote prompt.
+
+## Redesign 3c - Gallery
+- Heading: image-led catalogue introduction with a warm gold hairline, one primary and one secondary action.
+- Filters: scrollable horizontal offering tabs on mobile, full wrap at tablet, 52px search/select controls and clear active states.
+- Cards: 3-column desktop grid with 32-56px staggered offsets, warm framed surfaces, strong hover zoom and 44px title targets.
+- Mobile: strict single-column cards under 650px for legibility and touch.
+- Labels: real catalogue assets are presented as design concepts, not completed work.
+- Custom view: retains the existing 2D/3D process comparison and adds the same premium surface treatment.
+
+## Redesign 3d - Quote
+- Heading: focused enquiry message, 48px-plus mobile spacing, direct WhatsApp alternative and real catalogue handoff.
+- Form: 52px inputs, 56px submit control, 6px radii, strong label hierarchy and visible required/optional labels.
+- Validation: warm rose error text and border, inline helpers and preserved first-invalid focus behavior.
+- Selected design: framed image panel with design-concept copy and retained Change/Remove actions.
+- Desktop: form and guidance aside use a 1.75 / 0.75 split, with sticky guidance.
+- Success: prepared-message region is framed as a clear completion state with Open WhatsApp and Copy actions.
+
+## Redesign 3e - Contact and final polish
+- Contact: split intro and contact card, clear proprietor identity, offering links, local visit prompt and unverified-hours placeholder.
+- Footer: dark gold-framed surface, larger 15px navigation, visible phone action and unchanged ExpandR/Demo attribution.
+- Logo: supplied gold PNG retained unchanged on transparent dark surfaces.
+- Shared: consistent 6px controls, 3px image framing, warm radial surfaces, gold hairlines, transform/opacity motion and reduced-motion fallback.
+- Final geometry: no horizontal overflow or H1/alt/axe regressions across four routes at 375px, 1280px and 1440px.
+- Lighthouse remains below target on Home, Gallery and Contact. Quote is close at 89. Do not claim mobile performance is complete.
+
 ## Status
 LATEST Phase 4 partially implemented; stopped under the two-failure rule because mobile performance target remains unmet after two optimization attempts. Latest scores performance Home/Gallery/Quote/Contact = 71/83/81/85; other categories = 100 across all pages. Reports preserve baseline/intermediate/latest. Do not call final pass complete.
 

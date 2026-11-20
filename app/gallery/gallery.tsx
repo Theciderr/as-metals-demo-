@@ -100,8 +100,8 @@ export function Gallery({ initial }: { initial: Record<string, string> }) {
             : "Find a design for your space."}
         </h1>
         <p>
-          Jali, carved doors, relief panels and sculpted art. Choose a catalogue
-          reference or bring your own design.
+          Jali, carved doors, relief panels and sculpted art. Choose a design
+          concept or bring your own reference.
         </p>
         <div className="row">
           <a className="button primary" href={quote()}>
@@ -177,7 +177,7 @@ export function Gallery({ initial }: { initial: Record<string, string> }) {
               {filtered.length} {filtered.length === 1 ? "design" : "designs"}
               {state.offer ? " · " + state.offer : ""}
             </p>
-            <p>Catalogue illustrations · made to order</p>
+            <p>Design concepts · made to order</p>
           </div>
           {state.design && !active && (
             <p role="status">
@@ -224,7 +224,7 @@ export function Gallery({ initial }: { initial: Record<string, string> }) {
                       width={d.width}
                       height={d.height}
                       sizes="(min-width:1000px) 30vw,(min-width:650px) 45vw,100vw"
-                      alt={d.name + " catalogue illustration"}
+                      alt={d.name + " design concept"}
                       loading="lazy"
                     />
                   </button>
@@ -353,9 +353,9 @@ export function Gallery({ initial }: { initial: Record<string, string> }) {
                 width={active.width}
                 height={active.height}
                 sizes="(min-width:800px) 45vw,90vw"
-                alt={active.name + " catalogue illustration"}
+                alt={active.name + " design concept"}
               />
-              <figcaption>Catalogue illustration · not to scale</figcaption>
+              <figcaption>Design concept · not to scale</figcaption>
             </figure>
             <div>
               <p className="eyebrow">{active.code}</p>

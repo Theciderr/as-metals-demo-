@@ -1,6 +1,17 @@
 import type { Metadata } from "next";
+import { Bricolage_Grotesque, Manrope } from "next/font/google";
 import { businessSchema, pageMetadata, siteUrl } from "./site";
 import "./globals.css";
+const displayFont = Bricolage_Grotesque({
+  subsets: ["latin"],
+  variable: "--font-display",
+  display: "swap",
+});
+const bodyFont = Manrope({
+  subsets: ["latin"],
+  variable: "--font-body",
+  display: "swap",
+});
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   ...pageMetadata(
@@ -11,7 +22,7 @@ export const metadata: Metadata = {
 };
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${displayFont.variable} ${bodyFont.variable}`}>
       <body>
         <script
           type="application/ld+json"

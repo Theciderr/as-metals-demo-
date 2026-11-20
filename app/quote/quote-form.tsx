@@ -128,10 +128,10 @@ export function QuoteForm({
                 width={design.width}
                 height={design.height}
                 sizes="100px"
-                alt={design.name + " catalogue illustration"}
+                alt={design.name + " design concept"}
               />
               <div>
-                <small>Selected design · catalogue illustration</small>
+                <small>Selected design · concept</small>
                 <h2>{design.name}</h2>
                 <p>{design.code}</p>
                 <div className="row">

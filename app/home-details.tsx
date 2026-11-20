@@ -34,7 +34,7 @@ export function HomeDetails() {
             alt="Floral Sweep sculpted botanical wall relief catalogue illustration"
           />
           <figcaption>
-            Floral Sweep · AMF-3DR-14 · Catalogue illustration
+            Floral Sweep · AMF-3DR-14 · Design concept
           </figcaption>
         </figure>
         <div className="focus-bottom">
